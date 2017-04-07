@@ -3,9 +3,11 @@
 
 [![NPM](https://nodei.co/npm/gulp-cssnano.png?downloads=true)](https://www.npmjs.com/package/gulp-cssnano)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-cssnano_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-gulp-cssnano%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
