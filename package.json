@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "gulp-cssnano",
-    "description": "api documentation for [gulp-cssnano (v2.1.2)](https://github.com/ben-eb/gulp-cssnano) [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano)",
+    "description": "#### basic api documentation for  [gulp-cssnano (v2.1.2)](https://github.com/ben-eb/gulp-cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "gulp-cssnano": "*",

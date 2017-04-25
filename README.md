@@ -1,9 +1,14 @@
-# api documentation for  [gulp-cssnano (v2.1.2)](https://github.com/ben-eb/gulp-cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano)
+# npmdoc-gulp-cssnano
+
+#### basic api documentation for  [gulp-cssnano (v2.1.2)](https://github.com/ben-eb/gulp-cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cssnano)
+
 #### Minify CSS with cssnano.
 
-[![NPM](https://nodei.co/npm/gulp-cssnano.png?downloads=true)](https://www.npmjs.com/package/gulp-cssnano)
+[![NPM](https://nodei.co/npm/gulp-cssnano.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-cssnano)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-cssnano%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-cssnano/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Ben Briggs",
-        "email": "beneb.info@gmail.com",
         "url": "http://beneb.info"
     },
     "bugs": {
@@ -61,13 +65,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "beneb",
-            "email": "beneb.info@gmail.com"
+            "name": "beneb"
         }
     ],
     "name": "gulp-cssnano",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ben-eb/gulp-cssnano.git"
@@ -75,19 +77,10 @@
     "scripts": {
         "test": "tape test.js | tap-spec"
     },
-    "version": "2.1.2"
+    "version": "2.1.2",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-cssnano](#apidoc.module.gulp-cssnano)
-
-
-
-# <a name="apidoc.module.gulp-cssnano"></a>[module gulp-cssnano](#apidoc.module.gulp-cssnano)
 
 
 
