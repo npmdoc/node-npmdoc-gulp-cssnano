@@ -61,12 +61,74 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-cssnano">module gulp-cssnano</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-cssnano.gulp-cssnano">
+            function <span class="apidocSignatureSpan"></span>gulp-cssnano
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-cssnano" id="apidoc.module.gulp-cssnano">module gulp-cssnano</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-cssnano.gulp-cssnano" id="apidoc.element.gulp-cssnano.gulp-cssnano">
+        function <span class="apidocSignatureSpan"></span>gulp-cssnano
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-cssnano = function (opts) {
+    opts = opts || {};
+    var stream = new Transform({objectMode: true});
+
+    stream._transform = function (file, encoding, cb) {
+        if (file.isNull()) {
+            return cb(null, file);
+        }
+        if (file.isStream()) {
+            var error = &#x27;Streaming not supported&#x27;;
+            return cb(new PluginError(PLUGIN_NAME, error));
+        } else if (file.isBuffer()) {
+            nano.process(String(file.contents), assign(opts, {
+                map: (file.sourceMap) ? {annotation: false} : false,
+                from: file.relative,
+                to: file.relative
+            })).then(function (result) {
+                if (result.map &#x26;&#x26; file.sourceMap) {
+                    applySourceMap(file, String(result.map));
+                }
+                file.contents = new Buffer(result.css);
+                this.push(file);
+                cb();
+            }.bind(this))
+            .catch(function (error) {
+                  var errorOptions = {fileName: file.path};
+                  if (error.name === &#x27;CssSyntaxError&#x27;) {
+                     error = error.message + error.showSourceCode();
+                     errorOptions.showStack = false;
+                  }
+                 // Prevent stream’s unhandled exception from
+                 // being suppressed by Promise
+                 setImmediate(function () {
+                     cb(new PluginError(PLUGIN_NAME, error));
+                 });
+            });
+        }
+    };
+
+    return stream;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
